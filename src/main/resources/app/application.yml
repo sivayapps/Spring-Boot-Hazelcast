@@ -1,0 +1,5 @@
+spring:
+  hazelcast:
+    config: classpath:/app/hazelcast-client.xml
+
+
