@@ -1,9 +1,11 @@
 spring:
   main:
     banner-mode: 'off'
-    web-application-type: none
 
   hazelcast:
     config: classpath:/hazelcast/hazelcast.xml
+  cache:
+    type: hazelcast
 
-
+server:
+  port: 5050

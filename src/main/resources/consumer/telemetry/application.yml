@@ -3,18 +3,13 @@ spring:
     name: test_app
 
   hazelcast:
-    config: classpath:/app/hazelcast-client.xml
+    config: classpath:/consumer/telemetry/hazelcast-client.xml
   cache:
     type: hazelcast
 
-  jersey:
-    application-path: /api
-    servlet:
-      load-on-startup: 1
-
 server:
   servlet-path: /
-  port: 9090
+  port: 11000
   undertow:
     ioThreads: 4 #15
     workerThreads: 15 #150
